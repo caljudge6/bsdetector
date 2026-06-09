@@ -13,7 +13,7 @@ This is one of Cathal Maurice Judge's six active project repos. The same WhatsAp
 - **Bridge code:** `tools/whatsapp-bridge/index-baileys.js` in the RS repo (source of truth). Synced to the box via `rs-autosync.timer`.
 - **Standing rules:** Rule #43 / Charter A5 = ultra-code mode permanently ON. Rule #44 / Charter A6 = auto mode permanently ON (no approval prompts except 4 narrow exceptions: cost >= $5/mo, irreversible destructive ops, brand/strategic decisions, genuine creative forks).
 
-### The six repos this bot serves
+### The seven repos this bot serves
 | Key | Repo | Local path | This file? |
 |---|---|---|---|
 | `rs` | `caljudge6/DockerRepScorecard` | `/home/ubuntu/repo` | no |
@@ -22,6 +22,8 @@ This is one of Cathal Maurice Judge's six active project repos. The same WhatsAp
 | `centcom` | `caljudge6/CentCom` | `/home/ubuntu/repo-centcom` | no |
 | `bsd` | `caljudge6/bsdetector` | `/home/ubuntu/repo-bsdetector` | YES |
 | `ciso` | `caljudge6/CISOAssurance.ai` | `/home/ubuntu/repo-cisoassurance` | no |
+| `prop` | `caljudge6/Properties` | `/home/ubuntu/repo-properties` | no |
+| `prop` | `caljudge6/Properties` | `/home/ubuntu/repo-properties` | no |
 
 ### Governance hierarchy
 ```
