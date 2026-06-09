@@ -4,9 +4,9 @@
 
 **Project key:** `bsd` | **Local path when accessed via WhatsApp bridge:** `/home/ubuntu/repo-bsdetector` on `rs-bots` (Hetzner Cloud, Helsinki, IP `204.168.156.4`).
 
-This is one of Cathal Maurice Judge's six active project repos. The same WhatsApp bot serves all six; CJ binds groups to projects via `/project <key>`.
+This is one of Cathal Maurice Judge's seven active project repos. The same WhatsApp bot serves all seven; CJ binds groups to projects via `/project <key>`.
 
-### How CJ controls this AI (universal across all 6 repos)
+### How CJ controls this AI (universal across all 7 repos)
 - **WhatsApp:** he texts `+971 585 022 883` from his personal number. Only his number is on the allowlist.
 - **Cloud box:** **Hetzner Cloud CX43** (16 GB RAM, 8 cores Intel x86, 150 GB SSD, Ubuntu 24.04 LTS, ~EUR14.27/month flat).
 - **Auth:** Claude Max OAuth token. NOT API credits. NOT Bedrock. NOT Vertex.
@@ -23,7 +23,6 @@ This is one of Cathal Maurice Judge's six active project repos. The same WhatsAp
 | `bsd` | `caljudge6/bsdetector` | `/home/ubuntu/repo-bsdetector` | YES |
 | `ciso` | `caljudge6/CISOAssurance.ai` | `/home/ubuntu/repo-cisoassurance` | no |
 | `prop` | `caljudge6/Properties` | `/home/ubuntu/repo-properties` | no |
-| `prop` | `caljudge6/Properties` | `/home/ubuntu/repo-properties` | no |
 
 ### Governance hierarchy
 ```
@@ -33,6 +32,7 @@ CentCom (central governance, CHARTER.md source of truth)
   +-- ArchitectRPG (rpga) — GM engine for tabletop RPGs
   +-- BSDetector (bsd) — React Native mobile boilerplate/app [THIS REPO]
   +-- CISO Assurance (ciso) — cybersecurity assurance platform
+  +-- Properties (prop) — personal property management
 ```
 
 ### Full bridge runbook
