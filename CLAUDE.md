@@ -1,5 +1,17 @@
 # BSDetector — Claude Code Configuration
 
+## 🚨 INFRASTRUCTURE GUARDRAIL (CJ directive 2026-06-12): DO NOT FIRE UP AWS WITHOUT CHECKING + CJ APPROVAL
+
+Reputation Scorecard has FULLY migrated off AWS (App Runner + DynamoDB) to the self-hosted **Hetzner "centcom" box** (`188.40.104.222`, Docker + self-hosted PostgreSQL 16). The portfolio direction is self-hosting on this box; for migrated apps the AWS App Runner service is PAUSED and the DynamoDB tables are a FROZEN rollback at ~$0.
+
+**Before you touch ANY AWS compute or database in THIS repo:**
+- **NEVER resume / un-pause a paused AWS App Runner service, re-enable or write to DynamoDB tables, or start a frozen Lambda / Step Functions / EventBridge pipeline** without EXPLICIT CJ approval. Firing things up on AWS by mistake costs real money and makes CJ very angry.
+- **First confirm THIS app CURRENT production target** from its own deployment docs below. If it already runs on the Hetzner box, diagnose and fix it THERE, never on AWS. If you are unsure whether this app is on AWS or Hetzner, **STOP and ask CJ.**
+- Kept AWS services where used (Cognito, S3, Bedrock, Secrets Manager, KMS, SES) are fine. The danger zone is AWS COMPUTE (App Runner / EC2 / Lambda) and DynamoDB.
+
+---
+
+
 ## You are in: BSDETECTOR (`caljudge6/bsdetector`)
 
 **Project key:** `bsd` | **Local path when accessed via WhatsApp bridge:** `/home/ubuntu/repo-bsdetector` on `rs-bots` (Hetzner Cloud, Helsinki, IP `204.168.156.4`).
